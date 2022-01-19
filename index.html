@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet"/>
+     
+        <style>
+            #my-player{
+                float:left;
+            }
+        </style>
+        <title>
+            webpage
+    </title>
+</head>
+<body>
+    <video id="my-player" class="video-js vjs-big-play-centered"controls autoplay muted height="500px" width="49%" >
+        <source src="C:\Users\hp\Downloads\Untitled.mp4" type="video/mp4">
+    </video>
+    <video id="video2" class="video-js vjs-big-play-centered" controls  height="500px" width="49%" >
+        <source src="C:/Users/hp/project/reactfunctional/src/assets/S.mp4" type='video/mp4'>
+    </video>
+
+   
+    
+<!--     
+         document.getElementById('my-player').addEventListener('ended',myHandler,false);
+    function myHandler(e) {
+        alert("404");
+        var vid = document.getElementById("video2");
+vid.autoplay = true;
+vid.load();
+    }
+        var player = videojs("my-player",{
+            autoplay:'muted',
+            loop:false,
+            controls:true,
+        }); -->
+<!--         
+    //     player.playlistUi();
+    //     player.playlist([
+    //         {
+    //             sources:[
+    //                 {src:"C:/Users/hp/Downloads/Untitled.mp4",type:'video/mp4'}
+    //             ],poster: 'http://media.w3.org/2010/05/sintel/poster.png'
+    //     },
+    //     {
+    //         sources:[
+    //                 {src:"C:/Users/hp/project/reactfunctional/src/assets/S.mp4",type:'video/mp4'}
+    //             ],poster: 'http://media.w3.org/2010/05/sintel/poster.png'
+    //     },
+    // ]);
+    // player.playlist.autoadvance(0);
+    // <script src="node_modules\video.js"></script>
+    // <script src="node_modules\videojs-playlist-ui\dist\videojs-playlist-ui.min.js"></script>
+    // // <!-- <script src="videojs-playlist-ui.min.js"></script> 
+    // 
+    // <script src="node_modules\videojs-playlist\dist\videojs-playlist.min.js"> -->
+        <script >
+            var vid =document.getElementById('my-player');
+            var vid2=document.getElementById("video2");
+
+            vid.onended = function() {
+                alert("The video has ended");
+                vid2.autoplay=true;
+                vid2.load();
+            };
+
+            
+    </script>
+    <script src="node_modules\video.js"></script>
+    <!-- <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script> -->
+</body>
+</html>

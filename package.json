@@ -1,0 +1,22 @@
+{
+  "name": "video",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "video.js": "^7.17.0"
+  },
+  "dependencies": {
+    "@videojs/http-streaming": "^2.13.1",
+    "cors": "^2.8.5",
+    "videojs": "^1.0.0",
+    "videojs-playlist": "^5.0.0",
+    "videojs-playlist-thumbs": "^0.1.5",
+    "videojs-playlist-ui": "^4.0.0"
+  }
+}
